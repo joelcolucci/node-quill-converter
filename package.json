@@ -1,0 +1,12 @@
+{
+  "name": "node-quill-converter",
+  "version": "0.0.0",
+  "description": "Convert HTML to Delta or Delta to HTML",
+  "main": "./lib/index.js",
+  "author": "Joel Colucci",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "jsdom": "^11.8.0"
+  }
+}
