@@ -1,6 +1,6 @@
 {
   "name": "node-quill-converter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert HTML to Delta or Delta to HTML",
   "keywords": [
     "node",
