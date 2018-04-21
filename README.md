@@ -34,7 +34,6 @@ console.log(JSON.stringify(delta); // {"ops":[{"insert":"hello, "},{"insert":"wo
 ```
 
 ### Convert an Quill delta to an HTML string:
-#### Not yet implemented!!!
 ```js
 const { convertDeltaToHtml } = require('node-quill-converter');
 
