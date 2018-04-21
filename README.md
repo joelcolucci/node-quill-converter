@@ -1,4 +1,4 @@
-# node-quill-converter
+# node-quill-converter [![NPM version](https://img.shields.io/npm/v/node-quill-converter.svg)](https://www.npmjs.com/package/node-quill-converter)
 > Convert HTML to a Quill Delta or a Quill Delta to HTML
 
 The purpose of this package is to assist in migrating to or from the [Quill editor](https://quilljs.com/).
