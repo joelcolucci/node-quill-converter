@@ -23,7 +23,7 @@ let delta = convertTextToDelta(text);
 console.log(JSON.stringify(delta)); // {"ops":[{"insert":"hello, world\n"}]}
 ```
 
-### Convert an HTML string to a Quill delta:
+### Convert a HTML string to a Quill delta:
 ```js
 const { convertHtmlToDelta } = require('node-quill-converter');
 
@@ -33,13 +33,13 @@ let delta = convertHtmlToDelta(htmlString);
 console.log(JSON.stringify(delta); // {"ops":[{"insert":"hello, "},{"insert":"world","attributes":{"bold":true}}]}
 ```
 
-### Convert an Quill delta to an HTML string:
+### Convert a Quill delta to an HTML string:
 ```js
 const { convertDeltaToHtml } = require('node-quill-converter');
 
 let html = convertDeltaToHtml(delta);
 
-console.log(html) ;
+console.log(html) ; // '<p>hello, <strong>world</strong></p>'
 ```
 
 ## License
