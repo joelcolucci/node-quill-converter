@@ -17,8 +17,14 @@
   "author": "Joel Colucci",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "jsdom": "^11.8.0",
     "quill": "^1.3.6"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0"
   }
 }
