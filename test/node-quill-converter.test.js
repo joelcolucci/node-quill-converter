@@ -37,7 +37,7 @@ describe('node-quill-converter', () => {
     expect(deltaResult).toEqual(deltaExpected);
   });
 
-  it('convertHtmlToDelta', () => {
+  it('convertDeltaToHtml', () => {
     let delta = {
       ops:[
         {
