@@ -25,6 +25,9 @@ describe('node-quill-converter', () => {
           attributes: {
             bold: true
           }
+        },
+        {
+          insert: "\n"
         }
       ]
     };
