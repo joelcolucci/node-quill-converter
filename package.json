@@ -18,13 +18,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "jest"
+    "test": "jest test"
   },
   "dependencies": {
     "jsdom": "^11.8.0",
     "quill": "^1.3.6"
   },
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^25.1.0"
   }
 }
