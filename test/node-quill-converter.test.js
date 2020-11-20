@@ -1,7 +1,8 @@
 const {
   convertTextToDelta,
   convertHtmlToDelta,
-  convertDeltaToHtml } = require('../lib/index.js');
+  convertDeltaToHtml,
+  convertDeltaToText } = require('../lib/index.js');
 
 describe('node-quill-converter', () => {
   it('convertTextToDelta', () => {
@@ -63,5 +64,29 @@ describe('node-quill-converter', () => {
     let htmlResult = convertDeltaToHtml(delta);
 
     expect(htmlResult).toEqual(htmlExpected);
+  });
+
+  it('convertDeltaToText', () => {
+    let delta = {
+      ops:[
+        {
+          insert: "Hello "
+        },
+        {
+          insert:"World!",
+          attributes: {
+            bold: true
+          }
+        },
+        {
+          insert: "\n"
+        },
+      ]
+    };
+
+    let textExpected = `Hello World!\n`;
+    let textResult = convertDeltaToText(delta);
+
+    expect(textResult).toEqual(textExpected);
   });
 });
