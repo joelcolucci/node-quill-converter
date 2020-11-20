@@ -2,7 +2,8 @@ const { iterate } = require('leakage');
 const {
   convertTextToDelta,
   convertHtmlToDelta,
-  convertDeltaToHtml } = require('../lib/index.js');
+  convertDeltaToHtml,
+  convertDeltaToText } = require('../lib/index.js');
 
 
 describe('node-quill-converter', () => {
@@ -39,6 +40,26 @@ describe('node-quill-converter', () => {
       };
 
       convertDeltaToHtml(delta);
+    })
+  })
+
+  it('convertDeltaToText - does not leak', () => {
+    iterate(() => {
+      const delta = {
+        ops: [
+          {
+            insert: "hello, "
+          },
+          {
+            insert: "world",
+            attributes: {
+              bold: true
+            }
+          }
+        ]
+      };
+
+      convertDeltaToText(delta);
     })
   })
 })
