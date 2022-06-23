@@ -21,7 +21,7 @@
     "test": "jest test"
   },
   "dependencies": {
-    "jsdom": "^11.8.0",
+    "jsdom": "^16.5.0",
     "quill": "^1.3.6"
   },
   "devDependencies": {
