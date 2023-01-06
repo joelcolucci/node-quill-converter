@@ -1,6 +1,6 @@
 {
   "name": "node-quill-converter",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Convert HTML to Delta or Delta to HTML",
   "keywords": [
     "node",
@@ -21,8 +21,8 @@
     "test": "jest test"
   },
   "dependencies": {
-    "jsdom": "^11.8.0",
-    "quill": "^1.3.6"
+    "jsdom": "^20.0.3",
+    "quill": "^1.3.7"
   },
   "devDependencies": {
     "jest": "^25.1.0",
